@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>Condominium Administration</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("./Images/skyline.jpg");
+        }
+
+        .banner {
+            font-size: larger;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(500px);
+            width: 100%;
+
+        }
+
+        .formcontainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 24px;
+            font-size: larger;
+        }
+
+        input {
+            padding: 8px;
+
+        }
+
+        .input-radio {
+            width: 20px;
+            height: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 8px;
+            font-size: medium;
+            font-weight: 600;
+        }
+
+        .radio-wrapper {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <h2>New Visitor</h2>
+    </div>
+    <div>
+        <h1>Visiting Unit & User</h1>
+
+    </div>
+    <form class="formcontainer">
+        <div class="input-container">
+            <label for="name">Visitor Name</label>
+            <input type="text" id="name" name="name"><br>
+        </div>
+        <div class="input-container" style="float: left; font-size: 18px;">
+            <label for="type">Select Visitor type</label>
+        </div>
+        <div class="radio-wrapper">
+            <div class="input-container">
+                <label for="visitor">Visitor</label>
+                <input class="input-radio" type="radio" id="contractor" name="type" value="contractor">
+            </div>
+            <div class="input-container">
+                <label for="contractor">Contractor</label><br>
+                <input class="input-radio" type="radio" id="contractor" name="type" value="contractor">
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="checkbox" id="parking" name="parking">
+            <label for="parking">Check here if visitor requires parking</label><br>
+        </div>
+        <div class="input-container">
+
+            <label for="comments">Comments</label>
+            <input type="text" id="comments" name="comments"><br>
+        </div>
+        <div class="input-container">
+            <input type="submit" value="Save">
+            <input type="reset" value="Cancel">
+        </div>
+
+    </form>
+</body>
+
+</html>

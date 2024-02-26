@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>
+        Condominium Administration
+    </title>
+    <style>
+        /* Add some CSS styling here */
+        body {
+            background-image: url("./Images/skyline.jpg");
+        }
+
+        .web-page {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .search-bar {
+            display: flex;
+            gap: 20px;
+
+            &>input {
+                padding: 8px;
+            }
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 40px;
+        }
+
+        .imagecontainer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="web-page">
+        <h1>Condominium Services </h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Show All</button>
+            <select>
+                <option>Workspace Select</option>
+                <!-- Add more options here -->
+            </select>
+        </div>
+        <div class="icons">
+            <a href="./newvisitor.html">
+                <div class="imagecontainer">
+                    <img src="./Images/placeholder.png" alt="Visitor Parking">
+                    <span>Visitor Parking</span>
+                </div>
+            </a>
+            <div class="imagecontainer">
+                <img src="./Images/package.png" alt="Packages">
+                <span>Packages</span>
+            </div>
+            <div class="imagecontainer">
+                <img src="./Images/log.png" alt="Security log">
+                <span>Security log</span>
+            </div>
+            <div class="imagecontainer">
+                <img src="./Images/report.png" alt="Incident reports">
+                <span>Incident reports</span>
+            </div>
+            <div class="imagecontainer">
+                <img src="./Images/key.png" alt="Key Checkout">
+                <span>Key Checkout</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Add some HTML elements for the main content here -->
+        </div>
+    </div>
+</body>
+
+</html>

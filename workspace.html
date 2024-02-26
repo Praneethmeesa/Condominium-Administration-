@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>
+        Condominium Administration
+    </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("./Images/skyline.jpg");
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .logout-button {
+            background-color: #f0f0f0;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .instruction {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .search-input {
+            width: 300px;
+            height: 30px;
+            border: 1px solid #cccccc;
+            padding: 5px;
+        }
+
+        .search-button {
+            width: 100px;
+            height: 40px;
+            background-color: #f0f0f0;
+            border: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .workspace-fields {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .workspace-input {
+            width: 200px;
+            height: 30px;
+            border: 1px solid #cccccc;
+            padding: 5px;
+        }
+
+        .building {
+            padding: 16px;
+            background-color: burlywood;
+        }
+
+        button {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <img src="./Images/condo.webp" alt="Logo" class="logo">
+        <span class="title">Condominium Administration</span>
+        <button class="logout-button">Logout</button>
+    </div>
+    <div class="instruction">
+        Search & select the website you wish to use:
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="search workspace" class="search-input">
+        <button class="search-button">Search</button>
+    </div>
+    <div class="workspace-fields">
+        <button type="button" class="building" aria-placeholder="Building 1">
+            <a href="./homepage.html">
+                Building 1
+            </a>
+        </button>
+        <button type="button" class="building" aria-placeholder="Building 1">
+            <a href="./homepage.html">
+
+                Building 2
+            </a>
+        </button>
+        <button type="button" class="building" aria-placeholder="Building 1">
+            <a href="./homepage.html">
+
+                Building 3
+            </a>
+        </button>
+    </div>
+</body>
+
+</html>

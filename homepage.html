@@ -1,0 +1,147 @@
+<html>
+
+<head>
+  <title>
+    Condominium Administration
+  </title>
+  <style>
+    body {
+      background-image: url("./Images/skyline.jpg");
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "navbar content"
+        "footer footer";
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 0.4fr auto;
+      height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      color: #fff;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .account-icon {
+      float: right;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        border: 1px solid black;
+        width: 100%;
+
+        button {
+          width: 100%;
+          background-color: gold;
+          padding: 8px;
+        }
+      }
+    }
+
+    .navbar {
+      grid-area: navbar;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .content {
+      grid-area: content;
+      padding: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    button {
+      padding: 8px;
+      border-radius: 5px;
+      border: 0;
+      background-color: whitesmoke;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .content>img {
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px 1px;
+    }
+
+    .footer {
+      grid-area: footer;
+      color: #fff;
+      padding: 10px;
+      float: right;
+    }
+
+    #search-input {
+      padding: 8px !important;
+    }
+
+    #welcome-text {
+      color: black;
+      font-size: medium;
+      font-weight: bold;
+    }
+
+    #help-button {
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="header">
+      <input id="search-input" type="text" placeholder="Quick search" />
+      <button id="menu-button">☰</button>
+
+      <div class="account-icon"> <button id="message-button">✉</button>
+        <button id="notification-button">🔔</button>
+        <span id="welcome-text">Welcome</span>
+      </div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><button id="home-button">🏠 Home</button></li>
+        <li><button id="announcement-button">📢 Announcements</button></li>
+        <li><button id="library-button">📚 Library</button></li>
+        <li><button id="service-request-button">🛠 Service Requests</button></li>
+        <li><button id="amenity-booking-button">🏖 Amenity Booking</button></li>
+        <li><button id="my-account-button">👤 My Account</button></li>
+        <li><button id="unit-file-button">📁 Unit File</button></li>
+        <li><button id="security-concierge-button">
+            <a href="./secuitycon.html">
+              👮 Security & Concierge
+            </a>
+          </button>
+        </li>
+        <li><button id="reports-button">📊 Reports</button></li>
+      </ul>
+    </div>
+    <div class="content">
+      <img src="./Images/placeholder.jpg" alt="Placeholder image 1" />
+      <img src="./Images/placeholder2.jpg" alt="Placeholder image 2" />
+      <img src="./Images/placeholder3.jpg" alt="Placeholder image 3" />
+    </div>
+    <div class="footer"> <button id="help-button">❓ Help</button></div>
+  </div>
+</body>
+
+</html>
